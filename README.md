@@ -1,12 +1,5 @@
-# React + Vite
-
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Boi Poka - Your Online Book ReaderProject DescriptionBoi Poka is a web application designed to provide users with a platform to explore and read books online.  It allows users to:Read booksAdd books to a wishlistView book detailsThis application aims to create a convenient and user-friendly experience for book enthusiasts.FeaturesRead Books: Users can access and read books directly on the platform.Wishlist: Users can add books to a personal wishlist for later reading.Book Details: Users can view detailed information about each book, helping them make informed decisions.Technologies UsedReactReact RouterReact TabsSweetAlert2InstallationClone the repository:git clone <repository_url>
+Navigate to the project directory:cd boi-poka
+Install dependencies:npm install  # or yarn install
+UsageStart the development server:npm run dev # or yarn dev
+Open your browser:Open your web browser and navigate to the address shown in the terminal (usually http://localhost:3000).Project StructureThe project structure is organized as follows:src/: Contains the main source code.pages/: Contains the React components for different pages.ReadList/:  Components related to the Read List functionality.components/:  Reusable React components.Book/: Component to display individual book information.utility/:  Helper functions.addToDB.js:  Functions related to adding data.getStoredBook.js: Function to get stored book data.addLocalStorage.js:  Functions related to local storage.Key Components and FunctionalitiesReadList Component:Displays the list of books that the user has added to their "Read List".Allows users to sort the list.Uses React Tabs to separate "Read List" and "Wish List".Fetches book data using useLoaderData from React Router.Stores read list data using local storage with helper functions.Uses getItem to retrieve data.Uses handleMarkAsRead to mark a book as read, show a SweetAlert confirmation, and update the button appearance.Book Component:Displays individual book information (image, title, author).addToStoredDB:Function to add book IDs to the storage (local storage).getStoredBook:Function to get book IDs from local storage.AcknowledgementsThis project utilizes the following libraries:ReactReact RouterReact TabsSweetAlert2Future EnhancementsImplement the "Wish List" functionality.Add more sorting options.Implement server-side data fetching.Add user authentication.Improve UI/UX.

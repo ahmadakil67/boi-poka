@@ -2,7 +2,6 @@ import React from "react";
 import { useLoaderData, useParams } from "react-router";
 import { addToStoredDB } from "../../utility/addToDB";
 import Swal from 'sweetalert2';
-import { Helmet } from "react-helmet-async";
 
 
 const BookDetails = () => {
@@ -48,11 +47,6 @@ const BookDetails = () => {
 
   return (
     <div className="flex my-10 gap-4">
-      <Helmet>
-        <title>
-          Boi Poka | {bookId}
-        </title>
-      </Helmet>
       <div className="bg-gray-100 rounded-2xl">
         <img className="h-120 w-100 p-10" src={image} alt="" />
       </div>
